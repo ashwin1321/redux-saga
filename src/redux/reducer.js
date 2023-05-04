@@ -13,14 +13,19 @@ export const cartData = (data = [], action) => {
     // state is the current state of the store
     // action is the action that is dispatched. action is an object with a type and a payload. 
 
-    if (action.type === "ADD_TO_CART") {
+    // if (action.type === "ADD_TO_CART") {
+    //     console.log("reducer called", action, data)
+    //     return action.data
+    // }
+    // return "no action matched"
 
-        console.log("reducer called", action, data)
-        return [...data, action.data]
-
+    switch (action.type) {
+        case "ADD_TO_CART":
+            console.log(action.data)
+            return 1
+        case "REMOVE_FROM_CART":
+            return data.filter(item => item.id !== action.data.id)
+        default:
+            return data
     }
-    else {
-        console.log(`no action matched `)
-        return "no action matched"
-    }
-} 
+}

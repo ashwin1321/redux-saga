@@ -50,3 +50,12 @@
   margin-top: 20px;
   align-items: center;
 }
+
+.product-container {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}

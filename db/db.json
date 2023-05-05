@@ -2,6 +2,7 @@
   "product": [
     {
       "id": 1,
+      "price": 2000,
       "name": "Product 1",
       "color": "black",
       "Category": "Category 1",
@@ -11,34 +12,56 @@
     {
       "id": 2,
       "name": "Product 2",
+      "price": 2000,
       "color": "red",
       "Category": "Category 2",
       "brand": "Brand 2",
-      "photo": "https://picsum.photos/200/400"
+      "photo": "https://picsum.photos/200/300"
     },
     {
       "id": 3,
       "name": "Product 3",
       "color": "white",
+      "price": 2000,
       "Category": "Category 1",
       "brand": "Brand 1",
-      "photo": "https://picsum.photos/600/300"
+      "photo": "https://picsum.photos/200/300"
     },
     {
       "id": 4,
       "name": "Product 4",
       "color": "black",
+      "price": 2000,
       "Category": "Category 2",
       "brand": "Brand 2",
-      "photo": "https://picsum.photos/100/400"
+      "photo": "https://picsum.photos/205/300"
     },
     {
-      "id": 5,
-      "name": "Product 5",
+      "id": 4,
+      "name": "Product 4",
       "color": "black",
-      "Category": "Category 3",
-      "brand": "Brand 3",
-      "photo": "https://picsum.photos/200/500"
+      "price": 2000,
+      "Category": "Category 2",
+      "brand": "Brand 2",
+      "photo": "https://picsum.photos/205/300"
+    },
+    {
+      "id": 4,
+      "name": "Product 4",
+      "color": "black",
+      "price": 2000,
+      "Category": "Category 2",
+      "brand": "Brand 2",
+      "photo": "https://picsum.photos/205/300"
+    },
+    {
+      "id": 4,
+      "name": "Product 4",
+      "color": "black",
+      "price": 2000,
+      "Category": "Category 2",
+      "brand": "Brand 2",
+      "photo": "https://picsum.photos/205/300"
     }
   ]
 }

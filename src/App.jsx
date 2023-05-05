@@ -1,4 +1,5 @@
 import './App.css'
+import Header from './component/Header'
 import { addToCart } from './redux/action'
 import { useDispatch } from 'react-redux'
 // use dispatch to dispatch action to reducer to update state
@@ -13,7 +14,8 @@ function App() {
 
   return (
     <>
-      <button onClick={() => dispatch(addToCart(product))}>Add To Cart</button>
+      <Header />
+      <button onClick={() => dispatch(addToCart(product))} className='btn'>Add To Cart</button>
       {/* dispatch takes a parameter which is the action */}
     </>
   )

@@ -21,8 +21,8 @@ export const cartData = (data = [], action) => {
 
     switch (action.type) {
         case "ADD_TO_CART":
-            console.log(action.data)
-            return 1
+            return [...data, action.data]
+
         case "REMOVE_FROM_CART":
             return data.filter(item => item.id !== action.data.id)
         default:

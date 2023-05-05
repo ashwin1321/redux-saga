@@ -7,7 +7,9 @@
 import { combineReducers } from "redux";   // combineReducers is a function that combines all reducers into one root reducer
 
 import { cartData } from "./reducer";
+import { productList } from "./productReducer";
 
 export const rootReducer = combineReducers({
-    cartData
+    cartData,
+    productList
 })

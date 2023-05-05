@@ -27,7 +27,7 @@ export const cartData = (data = [], action) => {
             return data.filter(data => data.name !== action.data);
 
         case "EMPTY_CART":
-            console.log('empty card', action)
+            console.log('empty card', action.data)
             data = []
             return [...data]
 

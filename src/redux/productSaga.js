@@ -10,16 +10,26 @@ function* getProducts() {
     // put is like dispatch, it dispatches the action to the reducer
 }
 
-// eslint-disable-next-line require-yield
-function* test() {
-    console.log("Hello from test")
+function* addProduct(action) {
+    const { product } = action.payload;
+    const response = yield fetch("http://localhost:3000/product", {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(product)
+    });
+    const data = yield response.json();
+    yield put({ type: "ADD_PRODUCT_SUCCESS", data: data });
 }
+
 
 function* productSaga() {
     // yield is like await 
     yield takeEvery("PRODUCT_LIST", getProducts)
     // takeEvery is a function that takes in the action type as an argument and then calls the function that we want to run when that action is dispatched.
-    yield takeEvery("ADD_TO_CART", test)
+    yield takeEvery("ADD_PRODUCT", addProduct);
+
 }
 
 export default productSaga

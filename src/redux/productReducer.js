@@ -6,8 +6,13 @@ export const productList = (data = [], action) => {
             console.log('set product list', action)
             return [...action.data]
 
+        case "ADD_PRODUCT_SUCCESS":
+            console.log('add product success', action)
+            return [...data, action.data]
+
         default:
             return data
     }
 
 }
+

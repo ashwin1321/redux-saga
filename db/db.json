@@ -62,6 +62,15 @@
       "Category": "Category 2",
       "brand": "Brand 2",
       "photo": "https://picsum.photos/205/300"
+    },
+    {
+      "name": "rabindra",
+      "color": "black",
+      "price": "10",
+      "brand": "nepali",
+      "Category": "saga",
+      "photo": "https://images.unsplash.com/photo-1672743254475-c7cbca3b8080?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmVncm98ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "id": 5
     }
   ]
 }

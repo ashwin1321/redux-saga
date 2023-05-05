@@ -21,3 +21,12 @@ export const productListing = () => {
 //         data
 //     }
 // }
+
+export const addProduct = (product) => {
+    return {
+        type: "ADD_PRODUCT",
+        payload: {
+            product: product           // payload is an object that contains the data that we want to send to the reducer
+        }
+    };
+};

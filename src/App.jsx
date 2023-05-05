@@ -9,7 +9,7 @@ import { productListing } from './redux/productAction'
 function App() {
   const dispatch = useDispatch()
   const data = useSelector((state) => state.productList)
-  console.log(data)
+  console.log(`data from saga`, data)
 
   const product = {
     name: 'Iphone',

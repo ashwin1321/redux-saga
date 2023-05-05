@@ -15,3 +15,19 @@ export const addToCart = (data) => {
     }
 }
 
+export const removeFromCart = (data) => {
+    console.warn("action called", data)
+
+    return {
+        type: "REMOVE_FROM_CART",
+        data
+    }
+}
+
+export const emptyCart = (data) => {
+    console.log(`action empty cart`)
+    return {
+        type: "EMPTY_CART",
+        data
+    }
+}

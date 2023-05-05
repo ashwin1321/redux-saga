@@ -35,13 +35,18 @@
 }
 
 .btn {
-  display: flex;
-  margin-top: 20px;
-  margin-left: 50%;
   background-color: #e44c10;
   color: #fff;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  align-items: center;
 }

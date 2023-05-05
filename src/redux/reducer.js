@@ -24,7 +24,13 @@ export const cartData = (data = [], action) => {
             return [...data, action.data]
 
         case "REMOVE_FROM_CART":
-            return data.filter(item => item.id !== action.data.id)
+            return data.filter(data => data.name !== action.data);
+
+        case "EMPTY_CART":
+            console.log('empty card', action)
+            data = []
+            return [...data]
+
         default:
             return data
     }
